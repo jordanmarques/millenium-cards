@@ -1,6 +1,6 @@
 import React from "react";
 import { DecksWrapper } from "./style";
-import DeckDetails from "./DeckDetails";
+import DeckDetails from "./DeckDetails/DeckDetails";
 import DecksList from "./DecksList/DecksList";
 
 const Decks = () => {

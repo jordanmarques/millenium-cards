@@ -6,7 +6,7 @@ const DecksListPanel = ({ decks, onDecksClicked }) => {
     <DecksListPanelWrapper>
       {decks.map((deck, index) => (
         <PanelRow key={index} onClick={() => onDecksClicked(index)}>
-          {deck}
+          {deck.name}
         </PanelRow>
       ))}
     </DecksListPanelWrapper>

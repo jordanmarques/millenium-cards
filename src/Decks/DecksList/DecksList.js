@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { DecksListWrapper } from "./style";
 import DecksActions from "./DecksActions";
 import DecksListPanel from "./DecksListPanel";

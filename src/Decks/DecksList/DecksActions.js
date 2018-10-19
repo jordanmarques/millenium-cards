@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { TextInput, Button } from "evergreen-ui";
 import { connect } from "../../logic/app";
 
