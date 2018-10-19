@@ -13,7 +13,7 @@ export default class Search extends Component {
 
   search = value =>
     this.setState({
-      cards: cards.filter(card => card.name.toLowerCase().indexOf(value) !== -1)
+      cards: cards.filter(card => card.name.toLowerCase().indexOf(value.toLowerCase()) !== -1)
     });
 
   render() {
@@ -31,6 +31,7 @@ export default class Search extends Component {
               attack={card.attack}
               defense={card.defense}
               attrivute={card.attribute}
+              number={card.number}
             />
           ))}
         </SearchResult>

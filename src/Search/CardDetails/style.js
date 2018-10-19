@@ -27,7 +27,7 @@ export const CardDetailTableRow = styled("div")`
 
 export const CardStatsTitle = styled("div")`
   flex-grow: 1;
-  font-weight: bold;
+  font-style: bold;
 `;
 
 export const CardStatsValue = styled("div")`

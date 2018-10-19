@@ -5,7 +5,7 @@ export const HeaderWrapper = styled("div")`
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  background-color: #d35400;
+  background-image: linear-gradient(to right, #2c3e50 , #567088);
 `;
 
 export const HeaderLink = styled(Link)`
@@ -13,12 +13,29 @@ export const HeaderLink = styled(Link)`
   font-weight: bold;
   color: white;
   cursor: pointer;
-  margin: 0 7px;
   padding: 20px;
   &:hover {
     background-color: #f39c12;
-  };
+  }
   &:active {
     background-color: #f39c12;
   }
+`;
+
+export const AppLogoWrapper = styled("div")`
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  display: flex;
+`;
+
+export const CardLogo = styled("img")`
+  margin-right: 7px;
+  height: 2em;
+  transform: rotate(20deg);
+`;
+
+export const AppTitle = styled("div")`
+  font-style: italic;
+  color: white;
 `;

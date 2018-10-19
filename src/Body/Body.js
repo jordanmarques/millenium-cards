@@ -11,7 +11,7 @@ const Body = () => {
     <BodyWrapper>
       <Route exact path="/" component={Search} />
       <Route path="/decks" component={Decks} />
-      <Route path="/card/:name" component={CardDetails} />
+      <Route path="/card/:number" component={CardDetails} />
     </BodyWrapper>
   );
 };

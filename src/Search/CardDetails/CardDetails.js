@@ -6,9 +6,9 @@ import { CardDetailWraper, CardDetailImage } from "./style";
 export default class CardDetails extends Component {
   constructor(props) {
     super(props);
-    let name = props.match.params.name;
+    let number = props.match.params.number;
     this.state = {
-      card: cards.find(card => card.name === name)
+      card: cards.find(card => card.number == number)
     };
   }
 
