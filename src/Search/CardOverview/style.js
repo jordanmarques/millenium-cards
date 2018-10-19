@@ -1,6 +1,8 @@
 import styled from "react-emotion";
+import { Link } from "react-router-dom";
 
-export const CardWrapper = styled("div")`
+export const CardWrapper = styled(Link)`
+  text-decoration: none;
   cursor: pointer;
   border: 2px solid #e4e7eb;
   border-radius: 5px;
@@ -19,6 +21,8 @@ export const CardImage = styled("img")`
 export const CardStats = styled("div")`
   display: flex;
   flex-flow: column wrap;
+  flex-grow: 1;
+  align-items: center;
   margin: 0 5px;
   color: #425a70;
 `;

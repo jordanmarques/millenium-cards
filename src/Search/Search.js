@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { cards } from "../card";
-import { SearchInput, Table } from "evergreen-ui";
 import { SearchWrapper, SearchInputWrapper, SearchResult } from "./style";
 import CardOverview from "./CardOverview/CardOverview";
 
@@ -20,12 +19,10 @@ export default class Search extends Component {
   render() {
     return (
       <SearchWrapper>
-        <SearchInputWrapper>
-          <SearchInput
-            placeholder="Card Name..."
+          <SearchInputWrapper
+            placeholder=""
             onChange={e => this.search(e.target.value)}
           />
-        </SearchInputWrapper>
         <SearchResult>
           {this.state.cards.map((card, index) => (
             <CardOverview

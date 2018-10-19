@@ -1,4 +1,5 @@
 import styled from "react-emotion";
+import { SearchInput } from "evergreen-ui";
 
 export const SearchWrapper = styled("div")`
   padding: 5px;
@@ -7,8 +8,8 @@ export const SearchWrapper = styled("div")`
   align-items: center;
 `;
 
-export const SearchInputWrapper = styled("div")`
-  margin: 10px;
+export const SearchInputWrapper = styled(SearchInput)`
+  font-weight: bold;
 `;
 
 export const SearchResult = styled("div")`

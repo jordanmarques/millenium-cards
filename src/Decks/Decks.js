@@ -1,6 +1,6 @@
 import React from "react";
 
-const Decks = props => {
+const Decks = () => {
   return <div>decks</div>;
 };
 
