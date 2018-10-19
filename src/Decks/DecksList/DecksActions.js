@@ -1,29 +1,23 @@
 import React, { Component } from "react";
 import { TextInput, Button } from "evergreen-ui";
+import { connect } from "../../logic/app";
 
-export default class DecksActions extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      newDeck: ""
-    };
-  }
+const DecksActions = props => {
+  var actions = props.app.actions;
+  var state = props.app.state;
 
-  render() {
-    return (
-      <div>
-        <TextInput
-          onChange={e => this.setState({ newDeck: e.target.value })}
-          value={this.state.newDeck}
-          placeholder={"New Deck Name..."}
-        />
-        <Button
-          marginLeft={16}
-          onClick={() => this.props.addNewDeck(this.state.newDeck)}
-        >
-          Create Deck
-        </Button>
-      </div>
-    );
-  }
-}
+  return (
+    <div>
+      <TextInput
+        onChange={e => actions.onInputNewDeckChange(e.target.value)}
+        value={state.newDeckInput}
+        placeholder={"New Deck Name..."}
+      />
+      <Button marginLeft={7} onClick={() => actions.newDeck()}>
+        Create Deck
+      </Button>
+    </div>
+  );
+};
+
+export default connect(DecksActions);
