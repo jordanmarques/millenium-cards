@@ -55,7 +55,7 @@ const DeckDetails = props => {
       </DeckDetailCardImages>
     </DecksDetailsWrapper>
     :
-    <div>titi</div>
+    <div></div>
   );
 };
 
