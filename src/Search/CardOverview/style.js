@@ -1,5 +1,25 @@
+import React from "react";
 import styled from "react-emotion";
 import { Link } from "react-router-dom";
+import posed from "react-pose";
+
+const PosedSpringAnimationImg = posed.img({
+  visible: {
+    scale: 0.8,
+    height: 200,
+     transition: {
+       scale: {
+         type: 'spring',
+         velocity: 20
+       }
+     }
+  }
+});
+
+export const SpringAnimationImg = ({ src }) => {
+  return <PosedSpringAnimationImg initialPose={{}} pose={"visible"} src={src} />;
+};
+
 
 export const CardWrapper = styled(Link)`
   text-decoration: none;
@@ -22,11 +42,6 @@ export const StatWrapper = styled("div")`
   align-items: center;
   margin: 10px;
 `
-
-export const CardImage = styled("img")`
-  height: 200px;
-`;
-
 export const CardStats = styled("div")`
   display: flex;
   flex-flow: column wrap;

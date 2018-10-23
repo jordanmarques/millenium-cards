@@ -16,6 +16,7 @@ const DeckDetails = props => {
   var selectedDeck = state.selectedDeck;
 
   return (
+    selectedDeck ?
     <DecksDetailsWrapper>
       <DeckDetailTitleWrapper>
         <DeckDetailTitle>
@@ -53,6 +54,8 @@ const DeckDetails = props => {
         ))}
       </DeckDetailCardImages>
     </DecksDetailsWrapper>
+    :
+    <div>titi</div>
   );
 };
 

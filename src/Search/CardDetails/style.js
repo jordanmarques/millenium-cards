@@ -1,4 +1,22 @@
+import React from "react";
 import styled from "react-emotion";
+import posed from "react-pose";
+
+const PosedFadeInImg = posed.img({
+  visible: {
+    marginRight: 40,
+    x: -10,
+    y: -10,
+    transition: { duration: 400 }
+  },
+  init: {
+    boxShadow: "rgba(44, 43, 45, 0.27) 10px 10px 20px"
+  }
+});
+
+export const CardDetailImage = ({ src }) => {
+  return <PosedFadeInImg initialPose={"init"} pose={"visible"} src={src} />;
+};
 
 export const CardDetailWraper = styled("div")`
   display: flex;
@@ -8,10 +26,6 @@ export const CardDetailWraper = styled("div")`
   justify-content: center;
   margin: 20px;
   color: #425a70;
-`;
-
-export const CardDetailImage = styled("img")`
-  margin-right: 40px;
 `;
 
 export const CardDetailTableWrapper = styled("div")``;
@@ -30,5 +44,4 @@ export const CardStatsTitle = styled("div")`
   font-style: bold;
 `;
 
-export const CardStatsValue = styled("div")`
-`;
+export const CardStatsValue = styled("div")``;

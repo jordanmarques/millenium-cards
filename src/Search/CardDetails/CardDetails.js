@@ -13,6 +13,7 @@ export default class CardDetails extends Component {
   }
 
   render() {
+    window.scrollTo(0, 0);
     return (
       <CardDetailWraper>
         <CardDetailImage

@@ -1,8 +1,8 @@
-export let selectedDeckIndex = 0;
+export let selectedDeckIndex = null;
 
 export let newDeckInput = "";
 
-export let decks = [{ name: "noob", cards: [11714098, 23771716] }];
+export let decks = [];
 
 export const selectedDeck = state => {
   return state.decks[state.selectedDeckIndex];
